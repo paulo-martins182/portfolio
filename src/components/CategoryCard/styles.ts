@@ -8,10 +8,11 @@ export const Wrapper = styled.main`
     gap: 16px;
     min-width: 404px;
     max-width: 404px;
-    background: #202022;
+    background: #222224;
     padding: 22px;
     border: 1px solid ${theme.colors.gradient.bgGradientJet};
     border-radius: 8px;
+    box-shadow: ${theme.shadows.shadow2};
   `}
 `;
 

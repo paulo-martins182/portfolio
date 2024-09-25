@@ -2,7 +2,9 @@
 
 import styled from "styled-components";
 
-export const Wrapper = styled.main``;
+export const Wrapper = styled.main`
+  margin-bottom: 32px;
+`;
 
 export const Heading = styled.h3`
   color: #fafafa;

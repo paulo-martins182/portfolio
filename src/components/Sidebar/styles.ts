@@ -19,13 +19,14 @@ export const ImageBox = styled.div`
   ${({ theme }) => css`
     width: 150px;
     min-height: 150px;
-    border-radius: 30px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: ${theme.colors.gradient.bgGradientOnyx};
     margin: 0 auto;
     margin-bottom: 22px;
+    overflow: hidden;
   `}
 `;
 
@@ -61,6 +62,10 @@ export const InfoBox = styled.div`
     gap: 12px;
     align-items: center;
     margin: 32px 0;
+    transition: ${theme.transitions.transition1};
+    &:hover {
+      box-shadow: ${theme.shadows.shadow2};
+    }
   `}
 `;
 export const IconBox = styled.div`
@@ -70,7 +75,7 @@ export const IconBox = styled.div`
     border-radius: 12px;
     font-size: 18px;
     background: ${theme.colors.gradient.bgGradientOnyx};
-    box-shadow: ${theme.shadows.shadow1};
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,8 +121,9 @@ export const SocialList = styled.div`
   left: 50%;
   right: 50%;
 `;
-export const SOcialIconBx = styled.div`
+export const SOcialIconBx = styled.a`
   ${({ theme }) => css`
+    all: unset;
     cursor: pointer;
     transition: ${theme.transitions.transition1};
     svg {

@@ -14,6 +14,7 @@ import { MdMailOutline } from "react-icons/md";
 import { INFO_LIST } from "./data";
 import classNames from "classnames";
 import { SiBattledotnet, SiRiotgames } from "react-icons/si";
+import Image from "next/image";
 
 const Sidebar: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
@@ -24,7 +25,15 @@ const Sidebar: React.FC = () => {
 
   return (
     <S.Wrapper>
-      <S.ImageBox>AVATAR</S.ImageBox>
+      <S.ImageBox>
+        <Image
+          src="/images/profile.jpg"
+          width={250}
+          height={150}
+          alt="foto de perfil"
+          objectFit="cover"
+        />
+      </S.ImageBox>
       <S.Name>Paulo Martins</S.Name>
       <S.Tag>Frontend Developer</S.Tag>
 
@@ -43,16 +52,19 @@ const Sidebar: React.FC = () => {
       ))}
 
       <S.SocialList>
-        <S.SOcialIconBx>
+        <S.SOcialIconBx
+          href="https://github.com/paulo-martins182"
+          target="_blank"
+        >
           <BsGithub />
         </S.SOcialIconBx>
-        <S.SOcialIconBx>
+        <S.SOcialIconBx href="#" target="_blank">
           <SiBattledotnet />
         </S.SOcialIconBx>
-        <S.SOcialIconBx>
+        <S.SOcialIconBx href="#" target="_blank">
           <BsTwitter />
         </S.SOcialIconBx>
-        <S.SOcialIconBx>
+        <S.SOcialIconBx href="#" target="_blank">
           <SiRiotgames />
         </S.SOcialIconBx>
       </S.SocialList>

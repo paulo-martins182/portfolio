@@ -8,6 +8,8 @@ import { FaMobile } from "react-icons/fa6";
 import { SiCyberdefenders } from "react-icons/si";
 import { TiPhoneOutline } from "react-icons/ti";
 import { IoPhonePortraitOutline } from "react-icons/io5";
+import { CardSkills } from "@/components/CardSkills";
+import { SECONDARY_SKILLS, SKILLS } from "@/components/CardSkills/MOCK";
 
 export const Resume = () => {
   return (
@@ -33,16 +35,14 @@ export const Resume = () => {
           text="Boas praticas de segurança para manter na medida do possivel seus sites e aplicativos protegidos contra vulnerabilidades."
           icon={<SiCyberdefenders />}
         />
-        <CategoryCard
-          title="Cyber Security"
-          text="Boas praticas de segurança para manter na medida do possivel seus sites e aplicativos protegidos contra vulnerabilidades."
-          icon={<SiCyberdefenders />}
-        />
-        <CategoryCard
-          title="Cyber Security"
-          text="Boas praticas de segurança para manter na medida do possivel seus sites e aplicativos protegidos contra vulnerabilidades."
-          icon={<SiCyberdefenders />}
-        />
+      </Card>
+
+      <Card title="Main Skills">
+        <CardSkills data={SKILLS} />
+      </Card>
+
+      <Card title="Secondary Skills">
+        <CardSkills data={SECONDARY_SKILLS} />
       </Card>
     </S.Wrapper>
   );

@@ -1,10 +1,9 @@
 import Tab from "@/components/Tab";
 import { About } from "@/templates/About";
+import { Hobbies } from "@/templates/Hobbies";
 import { Profile } from "@/templates/Profile";
 import { Resume } from "@/templates/Resume";
-import { BiGame, BiHomeSmile } from "react-icons/bi";
-import { FiSettings } from "react-icons/fi";
-import { GiCharacter } from "react-icons/gi";
+import { BiGame } from "react-icons/bi";
 
 export default function Home() {
   const tabsData = [
@@ -27,7 +26,7 @@ export default function Home() {
       id: "3",
       title: "Hobbies",
       icon: <BiGame />,
-      content: <p>This is the settings content.</p>,
+      content: <Hobbies />,
     },
   ];
 
