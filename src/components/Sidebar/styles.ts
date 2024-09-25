@@ -121,7 +121,7 @@ export const SocialList = styled.div`
   left: 50%;
   right: 50%;
 `;
-export const SOcialIconBx = styled.a`
+export const SocialIconBox = styled.a`
   ${({ theme }) => css`
     all: unset;
     cursor: pointer;
@@ -132,10 +132,15 @@ export const SOcialIconBx = styled.a`
       color: #fafafa;
     }
 
-    &:hover {
+    &:not(.disabled):hover {
       svg {
         color: ${theme.colors.solid.primary};
       }
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      pointer-events: none;
     }
   `}
 `;

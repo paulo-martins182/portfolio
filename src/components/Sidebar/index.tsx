@@ -9,9 +9,15 @@ import {
 } from "react-icons/io5";
 import { BiChevronDown } from "react-icons/bi";
 import * as S from "./styles";
-import { BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import {
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+  BsWhatsapp,
+} from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
-import { INFO_LIST } from "./data";
+import { INFO_LIST, PHONE_LINK, WOW_LINK } from "./data";
 import classNames from "classnames";
 import { SiBattledotnet, SiRiotgames } from "react-icons/si";
 import Image from "next/image";
@@ -52,21 +58,33 @@ const Sidebar: React.FC = () => {
       ))}
 
       <S.SocialList>
-        <S.SOcialIconBx
+        <S.SocialIconBox
           href="https://github.com/paulo-martins182"
           target="_blank"
         >
           <BsGithub />
-        </S.SOcialIconBx>
-        <S.SOcialIconBx href="#" target="_blank">
+        </S.SocialIconBox>
+        <S.SocialIconBox
+          href={WOW_LINK}
+          target="_blank"
+          className={classNames({ disabled: false })}
+        >
           <SiBattledotnet />
-        </S.SOcialIconBx>
-        <S.SOcialIconBx href="#" target="_blank">
-          <BsTwitter />
-        </S.SOcialIconBx>
-        <S.SOcialIconBx href="#" target="_blank">
-          <SiRiotgames />
-        </S.SOcialIconBx>
+        </S.SocialIconBox>
+        <S.SocialIconBox
+          href={PHONE_LINK}
+          target="_blank"
+          className={classNames({ disabled: false })}
+        >
+          <BsWhatsapp />
+        </S.SocialIconBox>
+        <S.SocialIconBox
+          href="#"
+          target="_blank"
+          className={classNames({ disabled: true })}
+        >
+          <BsLinkedin />
+        </S.SocialIconBox>
       </S.SocialList>
     </S.Wrapper>
   );

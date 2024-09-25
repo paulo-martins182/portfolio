@@ -33,3 +33,8 @@ export const INFO_LIST = [
     value: "Brasil - São Paulo - SP",
   },
 ];
+
+export const PHONE_LINK = `https://api.whatsapp.com/send?phone=5565993085699&text=🧛🧛%20Bora%20trabaiarr%20so!%20🧛🧛`;
+
+export const WOW_LINK =
+  "https://worldofwarcraft.blizzard.com/en-us/character/us/azralon/monkfield";
