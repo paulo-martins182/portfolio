@@ -1,4 +1,5 @@
 import { Base } from "@/components/Base";
+import StyledComponentsRegistry from "@/lib/registry";
 import { Providers } from "@/providers";
 
 import type { Metadata } from "next";
@@ -22,11 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <Providers>
-        <body className={poppins.className}>
-          <Base>{children}</Base>
-        </body>
-      </Providers>
+      <StyledComponentsRegistry>
+        <Providers>
+          <body className={poppins.className}>
+            <Base>{children}</Base>
+          </body>
+        </Providers>
+      </StyledComponentsRegistry>
     </html>
   );
 }
