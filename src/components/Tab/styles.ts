@@ -7,7 +7,7 @@ export const TabsContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #1e1e1f;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 
   min-height: 760px;
@@ -48,7 +48,7 @@ export const TabsHeader = styled.div`
   display: flex;
   gap: 26px;
   justify-content: flex-end;
-  background-color: #282829;
+
   border-radius: 0px 0px 0px 91px;
   padding: 6px 33px;
   align-items: center;
@@ -102,7 +102,7 @@ export const TabsContent = styled.div`
     padding: 16px;
     font-size: 16px;
     color: #f3f3f4;
-    background-color: #1e1e1f;
+
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     min-height: 100%;

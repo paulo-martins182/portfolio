@@ -9,7 +9,7 @@ export const Wrapper = styled.main`
     margin-right: 14px;
     border-radius: 12px;
     box-shadow: ${theme.shadows.shadow2};
-    background: #222224;
+    background: rgba(0, 0, 0, 0.2);
     min-height: 280px;
     padding: 22px;
   `}

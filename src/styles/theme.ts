@@ -21,7 +21,7 @@ export const theme = {
       smokyBlack: "hsl(0, 0%, 7%)",
       white1: "hsl(0, 0%, 100%)",
       white2: "hsl(0, 0%, 98%)",
-      primary: "#ffdb70",
+      primary: "rgba(255, 123, 0)",
       vegasGold: "hsl(45, 54%, 58%)",
       lightGray: "hsl(0, 0%, 84%)",
       lightGray70: "hsla(0, 0%, 84%, 0.7)",

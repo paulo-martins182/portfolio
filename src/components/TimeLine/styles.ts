@@ -17,7 +17,8 @@ export const IconTimeLine = styled.div`
     width: 42px;
     height: 42px;
     border-radius: 8px;
-    background: ${theme.colors.gradient.bgGradientJet};
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px 0px rgba(255, 142, 3, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;

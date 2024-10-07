@@ -6,12 +6,13 @@ export const Wrapper = styled.main`
   ${({ theme }) => css`
     min-height: 760px;
     width: 280px;
-    background: #1e1e1f;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     border: 1px solid ${theme.colors.gradient.bgGradientJet};
-    box-shadow: ${theme.shadows.shadow5};
+    box-shadow: 0px 0px 15px 0px rgba(255, 142, 3, 0.3);
     padding: 22px;
     position: relative;
+    z-index: 2;
   `}
 `;
 
@@ -39,9 +40,10 @@ export const Name = styled.h1`
 `;
 export const Tag = styled.span`
   font-size: 12px;
-  background: #2b2b2c;
   padding: 4px 8px;
   border-radius: 8px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px 0px rgba(255, 142, 3, 0.3);
   width: fit-content;
   margin: 0 auto;
   color: #fafafa;
@@ -74,7 +76,8 @@ export const IconBox = styled.div`
     height: 48px;
     border-radius: 12px;
     font-size: 18px;
-    background: ${theme.colors.gradient.bgGradientOnyx};
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px 0px rgba(255, 142, 3, 0.3);
 
     display: flex;
     align-items: center;

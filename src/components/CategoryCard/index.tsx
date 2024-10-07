@@ -15,6 +15,10 @@ export const CategoryCard = ({ title, text, icon }: CategoryCardProps) => {
         <S.TitleCard>{title}</S.TitleCard>
         <S.TextCard>{text}</S.TextCard>
       </S.ContentCard>
+
+      <S.Light>
+        <S.LightBox />
+      </S.Light>
     </S.Wrapper>
   );
 };
